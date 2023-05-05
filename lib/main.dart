@@ -39,27 +39,36 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
           child: Container(
-            color: Colors.red,
             height: 200,
             width: 200,
+            decoration: BoxDecoration(
+              color: Colors.red,
+            ),
             child: Center(
               child: Container(
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
-                  // borderRadius: BorderRadius.circular(20)
-                  // borderRadius: BorderRadius.only(
-                  //   topLeft: Radius.elliptical(30, 50),
-                  //   topRight: Radius.elliptical(30, 50),
-                  // ),
-                  border: Border.all(
-                    width: 4,
-                    color: Colors.white,
-                    style: BorderStyle.solid,
-                  ),
-                  shape: BoxShape.circle,
-                ),
+                    color: Colors.blue,
+                    // borderRadius: BorderRadius.circular(20)
+                    // borderRadius: BorderRadius.only(
+                    //   topLeft: Radius.elliptical(30, 50),
+                    //   topRight: Radius.elliptical(30, 50),
+                    // ),
+                    border: Border.all(
+                      width: 4,
+                      color: Colors.white,
+                      style: BorderStyle.solid,
+                    ),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 11,
+                        color: Colors.black,
+                        blurStyle: BlurStyle.outer,
+                        spreadRadius: 2,
+                      )
+                    ]),
                 child: Center(
                   child: Container(
                     height: 100,
