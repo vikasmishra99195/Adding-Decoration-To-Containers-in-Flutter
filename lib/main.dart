@@ -63,10 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 11,
+                        blurRadius: 4,
                         color: Colors.black,
                         blurStyle: BlurStyle.outer,
-                        spreadRadius: 2,
+                        spreadRadius: 1,
                       )
                     ]),
                 child: Center(
